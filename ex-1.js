@@ -2,6 +2,11 @@ let words = ["hello", "world"];
 
 function getWordLengths(words) {
   // Start coding here
+  return words.map(countCharacter);
+}
+
+function countCharacter (word) {
+  return word.length;
 }
 
 const result = getWordLengths(words);
